@@ -1,0 +1,127 @@
+.sidebarContainer {
+  background: var(--white);
+  height: 100vh;
+  width: 5rem;
+  min-width: 5rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLogo {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 4.5rem;
+  font-size: 2.5rem;
+  color: var(--red-mark);
+  transition: all 0.3s;
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  text-align: center;
+  position: relative;
+  padding: .5rem 0;
+  margin: .5rem 0;
+}
+
+.nav li.active:before {
+  content: " ";
+  display: block;
+  background: var(--red-mark);
+  width: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.nav li a svg {
+  fill: var(--text);
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.nav li.active a svg {
+  fill: var(--red-mark);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--text)
+}
+
+.navLogo:hover {
+  color: var(--title);
+  animation-timing-function: ease-in-out;
+}
+
+.switcherIcon {
+  size: 10rem;
+}
+
+@media(max-width: 767px) {
+  .sidebarContainer {
+    background-image: none;
+    background-color: var(--white);
+    height: 4rem;
+    width: 100vw;
+    min-width: 100%;
+    flex-direction: row;
+  }
+
+  .navLogo {
+    margin-top: 0.1px;
+    margin-left: 10px;
+    padding-right: 2rem;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .nav ul li {
+    padding: 0 .5rem;
+    margin: 0 .5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav li.active:before {
+    width: 100%;
+    height: 4px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .footer {
+    padding: 0 2rem;
+  }
+}
