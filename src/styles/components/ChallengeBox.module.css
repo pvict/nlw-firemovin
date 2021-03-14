@@ -112,6 +112,7 @@
 
 .challengeActive footer button.challengeSucceededButton {
   background: var(--red-mark);
+  color: #ffffff
 }
 
 .challengeActive footer button:hover {
