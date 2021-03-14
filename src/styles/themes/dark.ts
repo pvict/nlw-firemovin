@@ -2,13 +2,15 @@ export default {
   title: 'dark',
 
   colors: {
-    white: '#666666',
-    background: '#f2f3f5',
-    grayLine: '#dcdde0',
-    text: '#666666',
-    title: '#333333',
+    white: '#202024',
+    whiteText: '#ffffff',
+    background: '#121214',
+    grayLine: '#29292e',
+    text: '#a8a8b3',
+    title: '#e1e1e6',
     redMark: '#e01522',
-    redLight: '#e70e02',
+    redDark: '#bf1119',
     titleBlack: '#141414',
+    timerBorder: '#29292e',
   },
 };

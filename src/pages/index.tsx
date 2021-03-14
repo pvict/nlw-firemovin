@@ -18,33 +18,31 @@ interface HomeProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
+  toggleTheme(): void;
 }
  
 export default function Home(props: HomeProps) {
   return (
-    <ChallengesProvider 
+    <ChallengesProvider
       level={props.level}
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
       <Head>
-        <link rel="shortcut icon" href="favicon.png" type="image/png"/>
-          
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
         <title>Início | move.it</title>
       </Head>
-      <div className='wrapper'> 
-        <Toaster
-            position="top-right"
-            reverseOrder={false}
-        />
-        <Sidebar />
+      <div className="wrapper">
+        <Toaster position="top-right" reverseOrder={false} />
+        <Sidebar toggleTheme={props.toggleTheme} />
         <div className={styles.container}>
-          <ExperienceBar/>
+          <ExperienceBar />
           <CountdownProvider>
             <section>
               <div>
                 <Profile />
-                <CompletedChallenges/>
+                <CompletedChallenges />
                 <Countdown />
               </div>
               <div>
@@ -55,7 +53,7 @@ export default function Home(props: HomeProps) {
         </div>
       </div>
     </ChallengesProvider>
-  )
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {

@@ -6,13 +6,15 @@ declare module 'styled-components' {
 
     colors: {
       white: string,
+      whiteText: string,
       background: string,
       grayLine: string,
       text: string,
       title: string,
       redMark: string,
-      redLight: string,
-      titleBlack: string
+      redDark: string,
+      titleBlack: string,
+      timerBorder: string
     }
   }
 }

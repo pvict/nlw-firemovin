@@ -8,14 +8,16 @@ export default createGlobalStyle`
 }
 
 :root {
-  --white:${(props) => props.themes.colors.white};
-  --background: ${(props) => props.themes.colors.white};
-  --gray-line: ${(props) => props.themes.colors.white};
-  --text: ${(props) => props.themes.colors.white};
-  --title: ${(props) => props.themes.colors.white};
-  --red-mark: ${(props) => props.themes.colors.white};
-  --red-light: ${(props) => props.themes.colors.white};
-  --title-black: ${(props) => props.themes.colors.white};
+  --white:${(props) => props.theme.colors.white};
+  --white-text:${(props) => props.theme.colors.whiteText};
+  --background: ${(props) => props.theme.colors.background};
+  --gray-line: ${(props) => props.theme.colors.grayLine};
+  --text: ${(props) => props.theme.colors.text};
+  --title: ${(props) => props.theme.colors.title};
+  --red-mark: ${(props) => props.theme.colors.redMark};
+  --red-light: ${(props) => props.theme.colors.redDark};
+  --title-black: ${(props) => props.theme.colors.titleBlack};
+  --timer-border: ${(props) => props.theme.colors.timerBorder};
 }
 
 .wrapper {
