@@ -18,6 +18,7 @@ export default createGlobalStyle`
   --red-light: ${(props) => props.theme.colors.redDark};
   --title-black: ${(props) => props.theme.colors.titleBlack};
   --timer-border: ${(props) => props.theme.colors.timerBorder};
+  --start-button: ${(props) => props.theme.colors.startButton};
 }
 
 .wrapper {

@@ -12,5 +12,6 @@ export default {
     redDark: '#bf1119',
     titleBlack: '#141414',
     timerBorder: '#29292e',
+    startButton: '#29292e',
   },
 };

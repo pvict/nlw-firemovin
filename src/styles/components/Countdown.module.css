@@ -50,7 +50,7 @@
   border: 0;
   border-radius: 5px;
 
-  background: var(--title-black);
+  background: var(--start-button);
   color: var(--white-text);
 
   font-size: 1.25rem;
@@ -74,7 +74,7 @@
   border-radius: 5px;
 
   background: var(--white-text);
-  color: var(--white);
+  color: var(--title-black);
 
   font-size: 1.25rem;
   font-weight: 600;

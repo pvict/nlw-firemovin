@@ -14,7 +14,8 @@ declare module 'styled-components' {
       redMark: string,
       redDark: string,
       titleBlack: string,
-      timerBorder: string
+      timerBorder: string,
+      startButton: string
     }
   }
 }

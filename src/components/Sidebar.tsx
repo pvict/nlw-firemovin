@@ -57,6 +57,7 @@ export function Sidebar({toggleTheme}): JSX.Element {
           onHandleColor={colors.redDark}
           offColor={colors.grayLine}
           onColor={colors.redMark}
+          activeBoxShadow='0 0 1px 2px #222222'
         />
       </footer>
     </aside>

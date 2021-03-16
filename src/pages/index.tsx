@@ -14,6 +14,7 @@ import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 import styles from '../styles/pages/Home.module.css'
 
+const defaultProps = {profileStore:{}}
 interface HomeProps {
   level: number;
   currentExperience: number;
