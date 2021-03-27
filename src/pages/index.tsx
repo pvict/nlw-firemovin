@@ -32,7 +32,7 @@ export default function Home(props: HomeProps) {
       <Head>
         <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
-        <title>Início | move.it</title>
+        <title>Início | firemovin</title>
       </Head>
       <div className="wrapper">
         <Toaster position="top-right" reverseOrder={false} />
