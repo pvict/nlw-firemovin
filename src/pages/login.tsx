@@ -4,12 +4,8 @@ import { signIn, signOut, useSession } from 'next-auth/client';
 import styles from '../styles/pages/Login.module.css'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-
-interface LoginProps {
-  
-}
  
-export default function Login(props: LoginProps) {
+export default function Login() {
   const [session, loading] = useSession();
   const router = useRouter();
   useEffect(() => {
