@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { signIn, signOut, useSession } from 'next-auth/client';
 
 import styles from '../styles/pages/Login.module.css'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 interface LoginProps {
   
@@ -9,6 +11,14 @@ interface LoginProps {
  
 export default function Login(props: LoginProps) {
   const [session, loading] = useSession();
+  const router = useRouter();
+  useEffect(() => {
+    if (!(session || loading)) {
+      router.push('/login');
+    } else {
+      router.push('/');
+    }
+  }, [session, loading]);
 
   return <>
     {!session && <>
